@@ -13,7 +13,6 @@ import android.os.Binder;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-
 import android.util.Log;
 import android.view.WindowManager;
 
@@ -71,7 +70,7 @@ public class SplashActivity extends Activity implements OnResultBack {
 
         SplashActivity splashActivity = new SplashActivity(new DoGet(), SplashActivity.this);
 
-        splashActivity.getSwitch(BuildConfig.CHECKVERSION_URL_LIST, BuildConfig.BLOG_URL_LIST, BuildConfig.QUDAO);
+        splashActivity.getSwitch(BuildConfig.CHECKVERSION_URL_LIST, BuildConfig.BLOG_URL_LIST, "bityard_us");
 
 
     }
@@ -87,10 +86,7 @@ public class SplashActivity extends Activity implements OnResultBack {
             SwitchMainEnter.getInstance().goToWeb(activity, jsonEntity.getUrl(), null);
             activity.finish();
         } else if (result == false) {
-
             SwitchMainEnter.getInstance().goToWeb(activity, BuildConfig.WEB_URL, null);
-            activity.finish();
-
             activity.finish();
         }
     }

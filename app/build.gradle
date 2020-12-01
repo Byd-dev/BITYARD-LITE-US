@@ -3,11 +3,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.bityard.lite"
+        applicationId "com.bityard.us"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 4
-        versionName "1.0.4"
+        versionCode 2
+        versionName "1.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         flavorDimensions "1"
         multiDexEnabled true
@@ -17,7 +17,7 @@ android {
 
         buildConfigField "String", "AK", '"AtGlf0AeZaZGVWH9iwFKboyp"'//百度AI AK
         buildConfigField "String", "SK", '"Fiq4CgzCxeKzal8VKAxj7DgbzAXoKVkH"'//百度AI SK
-        buildConfigField "String", "WEB_URL", '"http://app.bityard.com/"'//马甲包地址
+        buildConfigField "String", "WEB_URL", '"https://app.bityard.com/"'//马甲包地址
         buildConfigField "String[]", "CHECKVERSION_URL_LIST", 'new String[]{"https://api.bityard.com"}'
 //开关地址
         buildConfigField "String[]", "BLOG_URL_LIST", 'new String[]{"", ""}'
@@ -48,7 +48,7 @@ android {
                 buildConfigField "String", "QUDAO", '"ltqh"'
             }
             google {
-                buildConfigField "String", "QUDAO", '"VNKG"'
+                buildConfigField "String", "QUDAO", '"bityard_us"'
             }
         }
 
